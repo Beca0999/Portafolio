@@ -1,38 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset ="UFT-8">
-    <title> Mi Portafolio</title>
-    <link rel="stylesheet"href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>Mi nombre </h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                
-            </ul>
-        </nav>       
-    </header>
-    <main>
-        <section id="sobre-mi">
-            <h2>Sobre mi</h2>
-            <p>Aqui hablo de mi :v</p>
-        </section>
-        <section id="proyectos">
-            <h2>Mis proyectos</h2>
-            <p>Aqui se muestran los proyectos mediante la base de datos</p>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form>
-                <!--formulario-->
-            </form>
-        </section>
-    </main>
-    <script src="js/principal.js"></script>
+  <main class="container">
+    <section class="hero">
+      <h1>Hola, soy [Tu Nombre]</h1>
+      <p>Desarrollador web / Estudiante de ingeniería en sistemas</p>
+      <nav class="social">
+        <a href="https://github.com/Beca0999" target="_blank" class="social-btn">
+    <i class="fab fa-github" >GitHub</a>
+        <a href="mailto:rebecagomezgonzalez332@gmail.com" class="social-btn">
+    <i class="fas fa-envelope"></i>Correo</a>
+        <!-- añade más enlaces si quieres -->
+      </nav>
+    </section>
+
+    <section class="sobre-mi" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Aquí va una pequeña presentación personal.</p>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+      <h2>Proyectos</h2>
+      <div id="lista-proyectos">
+        <!-- Aquí después cargaremos con JavaScript -->
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Tu mensaje"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <script src="../js/principal.js"></script>
 </body>
 </html>
